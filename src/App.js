@@ -14,7 +14,7 @@ function App() {
           Faltan.
         </p>
         <Countdowntimer CountdownTimestampMs={1668812400000}/>
-        <video src={"WhatsApp Video 2022-11-08 at 10.48.40 AM.mp4"} width="300" height="600" controls="controls" autoPlay={true} />
+        <video src={"https://umasbuckets.s3.amazonaws.com/victorvideo.mp4"} width="300" height="600" controls="controls" autoPlay={true} />
       </header>
     </div>
   );
