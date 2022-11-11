@@ -6,6 +6,7 @@ export default function Form(props) {
   
   const handleAdd = () => {
     dataref.ref().child("invitados").push(invitados)
+    setInvitados("");
   }
 
 
