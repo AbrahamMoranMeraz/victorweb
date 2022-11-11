@@ -1,20 +1,18 @@
 import { useState } from "react";
+import { dataref } from "../../firebase";
 
 export default function Form(props) {
-  const [search, setSearch] = useState("");
+  const [invitados, setInvitados] = useState("");
   
+  const handleAdd = () => {
+    dataref.ref().child("invitados").push(invitados)
+  }
+
+
   return (
-    <>
-      <form
-        onSubmit={(ev) => {
-          ev.preventDefault();
-          // setSearch( search + '\n' + );
-          props.pass(ev.target.search.value);
-        }}
-      >
-        <input type="text" name="search" autoComplete="off" />
-        <button type="submit">Enviar</button>
-      </form>
-    </>
+    <div>
+        <input value={invitados} onChange={(e)=>{setInvitados(e.target.value)}} autoComplete="off" />
+        <button onClick={handleAdd}>Enviar</button>
+    </div>
   );
 }
