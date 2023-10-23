@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#map {
+  width: 100%;
+  height: 50vh; /* Establece la altura en una fracción del 50% de la altura de la ventana */
+}
