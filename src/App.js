@@ -28,7 +28,7 @@ function App() {
         <p>Faltan.</p>
         <Countdowntimer CountdownTimestampMs={1700236800000} />
         <p>Para el gran día!!!</p>
-        <video src={"https://umasbuckets.s3.amazonaws.com/victorvideo.mp4"} width="600" height="300" controls="controls" autoPlay={true} />
+        <video src={"https://umasbuckets.s3.amazonaws.com/victorvideo.mp4"} width="380" height="280vh" controls="controls" autoPlay={true} />
         <p>Confirma tu asistencia</p>
         <Form />
         <div>
