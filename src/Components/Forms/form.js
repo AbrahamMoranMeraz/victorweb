@@ -41,6 +41,7 @@ export default function Form(props) {
   return (
     <div>
       <input
+      className="boton-negro"
         value={invitados}
         onChange={(e) => {
           setInvitados(e.target.value);
@@ -49,9 +50,10 @@ export default function Form(props) {
         }}
         autoComplete="off"
       />
-      <button onClick={handleAdd}>Enviar</button>
+      <button onClick={handleAdd} className="boton-negro">Enviar</button>
       {error && <p>{error}</p>}
       {successMessage && <p>{successMessage}</p>}
+
     </div>
   );
 }

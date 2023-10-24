@@ -13,8 +13,30 @@
   }
 }
 
+/* Establece el color de texto en negro para la clase "boton-negro" */
+.boton-negro {
+  color: black; /* Cambia el color del texto a negro */
+  /* Otros estilos que desees aplicar al botón */
+}
+
+
+.fondo-color {
+  background-color: #1B2146; /* Cambia el color de fondo según tus preferencias */
+  color: white; /* Cambia el color del texto a blanco o cualquier otro color que desees */
+  padding: 10px; /* Añade un espaciado interior para mejorar la legibilidad */
+}
+
+/* Establece el color del texto en blanco para toda la aplicación */
+body, p, h1, h2, h3, h4, h5, h6, a, button, label, input, select, textarea {
+  color: white;
+}
+
+
 .App-header {
-  background-color: #92bcf2;
+  background-image: url("fondo1_.jpg"); /* Ruta relativa a la carpeta public */
+  background-size: contain; /* Ajusta el tamaño de la imagen al contenedor */
+  background-repeat: repeat-y; /* Evita la repetición de la imagen */
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

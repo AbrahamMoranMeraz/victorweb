@@ -24,12 +24,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Ven al cumpleaños de Eduardo</p>
+        <p className="fondo-color">Ven al cumpleaños de Eduardo</p>
         <p>Faltan.</p>
         <Countdowntimer CountdownTimestampMs={1700236800000} />
-        <p>Para el gran día!!!</p>
+        <p className="fondo-color">Para el gran día!!!</p>
         <video src={"https://umasbuckets.s3.amazonaws.com/victorvideo.mp4"} width="380" height="280vh" controls="controls" autoPlay={true} />
-        <p>Confirma tu asistencia</p>
+        <p className="fondo-color">Confirma tu asistencia</p>
         <Form />
         <div>
           <h3>Te estaremos esperando!!!!</h3>
