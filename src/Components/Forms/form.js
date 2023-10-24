@@ -51,8 +51,8 @@ export default function Form(props) {
         autoComplete="off"
       />
       <button onClick={handleAdd} className="boton-negro">Enviar</button>
-      {error && <p>{error}</p>}
-      {successMessage && <p>{successMessage}</p>}
+      {error && <p className="fondo-color">{error}</p>}
+      {successMessage && <p className="fondo-color">{successMessage}</p>}
 
     </div>
   );
