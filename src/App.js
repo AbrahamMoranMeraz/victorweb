@@ -8,7 +8,10 @@ function App() {
     // Crea una instancia de Google Maps y coloca un marcador en la dirección especificada.
     
   }, []);
-  const targetDate = new Date('2023-11-17').getTime();
+  const date = new Date('2023-11-18');
+  date.setHours(16,0,0);
+  const targetDate = date.getTime();
+
   return (
     <div className="App">
       <header className="App-header">
